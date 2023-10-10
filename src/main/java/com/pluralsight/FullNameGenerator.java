@@ -18,8 +18,9 @@ public class FullNameGenerator {
         System.out.println("Suffix: ");
         String suffixInput = namescanner.nextLine();
         //Print full name
-        System.out.println("Full Name: ");
-        String fullName =
+        String fullName = (firstNameInput + " " + middleNameInput + " " + lastNameInput + " " + suffixInput);
+        fullName = fullName.trim().toUpperCase();
+        System.out.println("Full Name: " + fullName);
 
 
 
